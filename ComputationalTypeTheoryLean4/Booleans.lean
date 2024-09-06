@@ -1,4 +1,5 @@
-import Lean.Elab.Tactic
+import ComputationalTypeTheoryLean4.CustomTactics
+
 /-!
  inductive typeは重要みたいな話
 -/
@@ -59,7 +60,3 @@ theorem distributivity_law : x & (y || z) = (x & y) || (x & z) := by
 
 theorem commutativity_law : x & y = y & x := by
   sorry
-
-
-
-def goal := Lean.Elab.Tactic.getMainGoal
